@@ -14,17 +14,13 @@
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/top.css">
 	<style type="text/css">
 	a {
   display: inline-block;
@@ -34,6 +30,30 @@ a:hover {
   color: orange;
 }
 </style>    
+
+
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+
+<!-- Back-to-top button handler code -->
+<script>
+$(document).ready(function(){
+    var btn = $('#backToTop');
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, '300');
+    });
+});
+</script>
+
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
   
@@ -42,9 +62,9 @@ a:hover {
    
    
     
-    <div id="sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 59px;background: rgb(220, 20, 60);">
+    <div id="sticky-wrapper" class="sticky-wrapper is-sticky" style="height: 59px;background: rgb(255, 128, 0);">
 	
-	<header class="site-navbar py-4 js-sticky-header site-navbar-target shrink" role="banner" style="width: 1903px; position: fixed; top: 0px; z-index: inherit;background: rgb(255, 128, 0);">
+	<header class="site-navbar py-4 js-sticky-header site-navbar-target shrink" role="banner" style="width: 100%; position: fixed; top: 0px; z-index: inherit;background: rgb(255, 128, 0);">
       
       <div class="container-fluid" style="background: rgb(255, 128, 0);">
         <div class="d-flex align-items-center">
@@ -106,7 +126,7 @@ a:hover {
     </div>
 
     
-    <div class="site-section courses-title" id="abstract-section">
+    <div class="site-section courses-title" id="abstract-section" style="background:rgb(255, 128, 0);">
       <div class="container">
         <div class="row mb-15 justify-content-center">
           <div class="col-lg-9 text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
@@ -123,7 +143,7 @@ a:hover {
 	
 
 
-    <div class="site-section programs" id="programs-section">
+    <div class="site-section programs" id="programs-section" style="background:rgb(0,128,255);">
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-lg-7 text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
@@ -184,19 +204,19 @@ a:hover {
       </div>
     </div>
 
-    <div class="site-section presenters" id="presenters-section">
+    <div class="site-section presenters" id="presenters-section" style="background: rgb(51,255, 153);">
       <div class="container">
 
-        <div class="row mb-5 justify-content-center">
+        <div class="row mb-5 justify-content-center"  >
           <div class="col-lg-7 mb-5 text-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
             <h2 class="section-title">Presenters</h2>
           </div>
         </div>
 
-        <div class="row" style="transform: translate(25%,25%); margin-left:140px;">          
+        <div class="row" style="transform: translate(25%,25%); margin-left:18%;">          
 
           <div class="col-md-8 col-lg-4 mb-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200" >
-            <div class="teacher text-center" >
+            <div class="teacher text-center" style="border-color:rgb(160,160,160);opacity:0.98;">
               <img src="images/yong.png" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-2">
               <div class="py-2" >
                 <h3 class="text-black">Yong Zheng</h3>
@@ -213,14 +233,14 @@ a:hover {
 	
 	
 	
-    <footer class="footer-section bg-white">
+    <footer class="footer-section" style="background:rgb(255, 178, 102);">
 	<div class="container">
 	<div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <div class="border-top pt-5">
             <p><font color="black">
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-        Copyright ©2019 - <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"><font color="orange">Colorlib</font></a>.
+        Copyright ©2019 - <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"><font color="white">Colorlib</font></a>.
         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
       </font></p>
             </div>
@@ -233,8 +253,13 @@ a:hover {
   
     
   </div> <!-- .site-wrap -->
+  
+  <!-- BackToTop Button -->
+<a href="javascript:void(0);" id="backToTop" class="back-to-top">
+    <i class="arrow"></i><i class="arrow"></i>
+</a>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-3.6.4.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>
