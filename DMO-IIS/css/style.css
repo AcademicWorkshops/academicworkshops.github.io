@@ -200,6 +200,11 @@ header {
       @media (max-width: 767.98px) {
         .a-block .text.half-to-full {
           max-width: 100%; } }
+    .a-block .text.half-to-full-right {
+      max-width: 66%; margin-left:400px; margin-top:200px;}
+      @media (max-width: 767.98px) {
+        .a-block .text.half-to-full-right {
+          max-width: 100%; } }
     .a-block .text .post-meta {
       color: #fff;
       text-transform: uppercase;
