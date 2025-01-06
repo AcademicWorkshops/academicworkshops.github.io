@@ -77,6 +77,9 @@ time, mark, audio, video {
     font-size: 1.1rem;
 }
 </style>
+<script
+  src="assets/js/bootstrap.bundle.min.js"
+></script>
 
 </head>
 
@@ -94,6 +97,21 @@ time, mark, audio, video {
             <li><a href="index.html#Dates">Important Dates</a></li>
             <li><a href="Program.html">Program</a></li>
             <li><a href="Organization.html">Organization</a></li>
+									<li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle"
+    href="#"
+    id="organizationDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    History
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+    <li><a class="dropdown-item" href="FinTech2024.html">DMO-FinTech 2024</a></li>
+  </ul>
+</li>
         </ul>
     </div>
 </nav><!-- End mobile main menu -->
@@ -136,9 +154,8 @@ time, mark, audio, video {
                     </a>
 					  </td>
 					  <td>
-					   <a href="https://pakdd2024.org/" class="logo" target="_blank">
-                        <img src="assets/img/logo_pakdd2024.png" height="46">
-					</a>
+					   
+					   
 					  </td>
 					 </tr>
 					</table>
@@ -164,6 +181,21 @@ time, mark, audio, video {
 									<li class="nav-item">
 									  <a class="nav-link" href="Organization.html">Organization</a>
 									</li>	
+									<li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle"
+    href="#"
+    id="organizationDropdown"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    History
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="organizationDropdown">
+    <li><a class="dropdown-item" href="FinTech2024.html">DMO-FinTech 2024</a></li>
+  </ul>
+</li>
 									  
 								  </ul>              
 								</div>
@@ -213,68 +245,10 @@ time, mark, audio, video {
 <section class="section services">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-				<div>
-				<h3>Invited Speeches</h3><hr>
-				<b>Keynote: Enhancing portfolio optimization with machine learning</b><br/>
-				<i>Invited Speaker: Yongjae Lee</i> <br/>
-				Bio: Prof. Yongjae Lee is an associate professor in the department of industrial engineering at Ulsan National Institute of Science and Technology (UNIST). Dr. Lee utilizes quantitative techniques such as ML/AI and optimization to analyze financial data and derive optimal decisions. He is particularly interested in analyzing individual and household financial activities to draw useful insights and design customized services. Dr. Lee has published more than 30 papers in international journals and conferences including Quantitative Finance, European Journal of Operational Research, Annals of Operations Research, Journal of Portfolio Management, AISTATS and ICAIF. He is an advisory editorial board member for the Journal of Financial Data Science and has applied ML/AI techniques to develop financial services through projects with several financial and IT companies. He received his B.S. degree in computer science and mathematical sciences and Ph.D. degree in industrial and systems engineering from KAIST.
-				<br/>
-				<br/>
-				<b>Keynote: FinGPT Forecaster: Leveraging Large Language Models for Enhanced Robo-Advising in Finance</b><br/>
-				<i>Invited Speaker: Bruce Yang</i> <br/>
-				Bio: Mr. Bruce Yang, the founder and President of AI4Finance Foundation, is an expert with profound insights in the fields of artificial intelligence and finance. He has held key positions in investment banking on Wall Street. He is best known for creating the FinGPT project, a renowned open-source initiative focused on financial large language models. Mr. Yang's research interests primarily lie at the intersection of deep learning, reinforcement learning, large language models (LLMs), and open-source AI technologies in the financial sector. He has published 18 academic papers at top-tier conferences such as NeurIPS, IEEE BigData, ICAIF AI in Finance, IJCAI, and AAAI, with a total citation count exceeding 800, demonstrating his significant impact in the academic community.<br/>
-				
-				<br/>
-				<br/>
-				<h3>Workshop Programs</h3><hr>
-				
-				<b>09:00 - 09:05, Openning remarks</b><br/><br/>
-				
-				<b>Session 1: Portfolio Optimization</b>
-				<ul>
-					<li>09:05 - 09:45, Keynote: Enhancing portfolio optimization with machine learning (40 mins)<br/>
-					<i>Invited Speaker: Yongjae Lee</i>; [<a href="docs/keynote_portfolio.pdf" target="_blank">Presentation Slide</a>]
-					</li>
-					<li>9:45 - 10:10, Long paper: <a href="docs/Paper_Adaptive_Portfolio_Optimization.pdf" target="_blank">Adaptive Peak Price with Lazy Updates for Short-term Portfolio Optimization</a> (25 mins)<br/>
-					<i>Authors: Kailin Xie, Ying Chu</i>
-					</li>
-					<li>10:10 - 10:30, Industry paper: <a href="docs/Paper_Multi_Objective_Portfolio_Visualization.pdf" target="_blank">Assisting Multi-Objective Portfolio Selection and Enhancing Transparency by An Interactive Visualization Platform</a> (20 mins)<br/>
-					<i>Authors: Yong Zheng, Kumar Neelotpal Shukla, Michael O'Leary, David Xuejun Wang, Jasmine Xu</i>
-					</li>
-				</ul>
-				<b>10:30 - 10:50, Coffee Breaks</b>
-				<br/>
-				<br/>
-				<b>Session 2: Financial Applications</b>
-				<ul>
-					<li>10:50 - 11:35, Keynote: FinGPT Forecaster: Leveraging Large Language Models for Enhanced Robo-Advising in Finance (45 mins)<br/>
-					<i>Invited Speaker: Bruce Yang</i>; [<a href="docs/keynote_FinGPT.pdf" target="_blank">Presentation Slide</a>]
-					</li>
-					<li>11:35 - 11:55, Industry paper: <a href="docs/Paper_Hybrid_Anomaly_Detection.pdf" target="_blank">A Hybrid Framework of Anomaly Detection for Mutual Fund Parent Companies</a> (20 mins)<br/>
-					<i>Authors: David Xuejun Wang, Yong Zheng</i>
-					</li>
-					<li>11:55 - 12:20, Long paper: <a href="docs/Paper_Real_Estate_Appraisal.pdf" target="_blank">Improving Real Estate Appraisal with POI Integration and Areal Embedding</a> (25 mins)<br/>
-					<i>Authors: Sumin Han, Youngjun Park, Sonia Sabir, Jisun An, Dongman Lee</i>
-					</li>
-				</ul>
-				
-				<b>12:20 - 13:40, Lunch</b><br/><br/>
-			<hr>
-				</div>
-            </div>
+            
 			
-			<h3>Post-Workshop Publication: Journal Special Issue</h3>
-<table>
-        <tr>
-            <td>
-                <img src="assets/img/journal_discoverdata.jpg" height="100%">
-            </td>
-            <td valign="top" align="left">
-                The accepted workshop papers will be invited to submit their extensions to a <br/><a href="https://link.springer.com/collections/ijhijjcffg" target="_blank">Special issue on AI for Financial Services and Applications</a> to be published <br/>in <a href="https://link.springer.com/journal/44248" target="_blank">Discover Data, Springer</a>. Note that the submission deadline is March 31,<br/> 2025, and we also welcome other authors from "AI for Finance" to submit<br/> their papers to this journal special issue.
-            </td>
-        </tr>
-    </table>
+			
+			
 
 <br />
         </div>
